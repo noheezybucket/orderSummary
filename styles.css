@@ -1,0 +1,160 @@
+/* importing a font from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*body setting : setting a viewport height allowed me to center the #container*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Red Hat Display", monospace;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+/*main image setting : changing with so it will take the whole place in his container */
+
+.img {
+  width: 100.3%;
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+}
+
+/* container setting : width, center content with flexbox */
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 0.7em;
+  max-width: 300px;
+  margin-bottom: 20px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+/* title setting */
+
+.title {
+  font-size: 22px;
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+/* paragraph setting : centering text, reducing width, increasing line-height and changing the font-size */
+
+.paragraph {
+  width: 75%;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 10px 0;
+  color: hsl(224, 23%, 55%);
+}
+
+/* pricing-box setting : I used Flexbox for the positioning of the different divs */
+
+.pricing-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 10px 0 25px 0;
+  padding: 15px;
+  border-radius: 0.8em;
+  background-color: hsl(225, 67%, 96%);
+}
+
+.music-icon {
+  display: flex;
+  align-items: center;
+}
+/* I've changed the size of the .music-icon img by reducing its width. I've changed the font-sizes of the different elements */
+
+.music-icon img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.annual-box {
+  line-height: 1.4em;
+  font-size: 0.8em;
+}
+
+.annual-box p {
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.change a:hover {
+  color: hsl(245, 93%, 70%);
+  text-decoration: none;
+}
+
+/* buttons settings :  */
+.btn-box {
+  text-align: center;
+  width: 80%;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 0.8em;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 15px 1px hsla(223, 47%, 23%, 40%);
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+}
+.cancel-order a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-order a:hover {
+  color: black;
+}
+
+.cancel-order {
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: hsl(245, 93%, 70%);
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* responsiveness */
+
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+    min-width: 300px;
+  }
+  body {
+    padding: 20px;
+  }
+}
